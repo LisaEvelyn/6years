@@ -15,7 +15,11 @@
       <a-light color="white" position="-1 1 0"></a-light>
       <a-light type="point" color="white" position="0 5 0"></a-light>
       
-      <a-torus-knot src="#rose" position="-5 3 -5" radius="0.5" rotation="0 0 0"></a-torus-knot>
+      <a-torus-knot src="#rose" position="-5 3 -5" radius="0.5"><a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation></a-torus-knot>
       <a-torus-knot src="#rose" position="0 -2 -3" radius="0.5" rotation="0 0 0"></a-torus-knot>      
       <a-torus-knot src="#rose" position="5 0 -3" radius="0.5" rotation="0 0 0"></a-torus-knot>
       <a-torus-knot src="#rose" position="3 5 -5" radius="0.5" rotation="0 0 0"></a-torus-knot>
