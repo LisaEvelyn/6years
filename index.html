@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, WebVR! - A-Frame</title>
-    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <title>6 years</title>
+    <meta name="description" content="6 years">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
@@ -12,8 +12,8 @@
       <img id="whiterose" src="whiterose.png">
       </a-assets>
       
-      <a-entity id="lightSphere" geometry="primitive: sphere; radius: 1" material="shader: flat" light="type: point; 
-               color: #FFF" position="0 2 5"></a-entity>
+      <a-light color="white" position="-1 1 0"></a-light>
+      <a-light type="point" color="white" position="0 5 0"></a-light>
       
       <a-torus-knot src="#rose" position="-5 3 -5" radius="0.5" rotation="0 0 0"></a-torus-knot>
       <a-torus-knot src="#rose" position="0 -2 -3" radius="0.5" rotation="0 0 0"></a-torus-knot>      
