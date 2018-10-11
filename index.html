@@ -11,16 +11,13 @@
       <a-assets>
       <img id="rose" src="rose.png">
       <img id="whiterose" src="whiterose.png">
-      <a-asset-item id="scene" src="scene.gltf">
         <a-asset-item id="3drose" src="rose.glb">
       </a-assets>
       
       <a-light color="white" position="-1 1 0"></a-light>
       <a-light type="point" color="white" position="0 5 0"></a-light>
-      
-        <a-gltf-model src="#scene" position="0 -1 0" rotation"0 0 90" scale="0.05 0.05 0.05"></a-gltf-model>
-         <a-gltf-model src="#scene" position="0 -1 0" rotation"0 90 90" scale="0.05 0.05 0.05"></a-gltf-model>
-        <a-gltf-model src="#3drose" position="0 0 0" rotation"0 0 0" scale="0.05 0.05 0.05"></a-gltf-model>
+ 
+       <a-gltf-model src="#3drose" position="0 -2 0" rotation"0 0 0" scale="0.01 0.01 0.01"></a-gltf-model>
       
       <a-torus-knot src="#rose" position="-5 3 -5" radius="0.5">
         <a-animation attribute="rotation" dur="10000" delay="1500" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation></a-torus-knot>
