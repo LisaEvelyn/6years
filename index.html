@@ -4,6 +4,19 @@
     <title>6 years</title>
     <meta name="description" content="6 years">
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    
+    <script>
+AFRAME.registerComponent('move-my-model', {
+  init: function () {
+    setTimeout( () => {
+      let rotation = this.el.getAttribute("rotation")
+      rotation.y += 10
+      this.el.setAttribute("rotation", rotation)
+    }, 500)
+  }
+})
+</script>
+    
   </head>
   <body>
     <a-scene>
@@ -16,7 +29,7 @@
       <a-light color="white" position="-1 1 0"></a-light>
       <a-light type="point" color="white" position="0 5 0"></a-light>
       
-        <a-gltf-model src="#scene" position="0 -2 -3" scale="0.05 0.05 0.05"></a-gltf-model>
+        <a-gltf-model src="#scene" move-my-model position="0 -2 -3" rotation"0 0 0" scale="0.05 0.05 0.05"></a-gltf-model>
       
       <a-torus-knot src="#rose" position="-5 3 -5" radius="0.5">
         <a-animation attribute="rotation" dur="10000" delay="1500" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation></a-torus-knot>
